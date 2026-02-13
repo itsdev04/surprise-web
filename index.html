@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Valentine’s Day ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ff9a9e, #fecfef);
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #d6336c;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 30px 0;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: auto;
+      margin: 10px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .timeline {
+      background: #fff0f6;
+      padding: 40px 20px;
+      margin: 30px 0;
+      border-radius: 10px;
+    }
+
+    .timeline h2 {
+      color: #d6336c;
+    }
+
+    .timeline p {
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+
+    .love-letter {
+      padding: 40px 20px;
+      background: #ffe3e3;
+      border-radius: 10px;
+      margin: 30px 0;
+    }
+
+    .surprise-btn {
+      background: #d6336c;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .surprise-btn:hover {
+      background: #a61e4d;
+    }
+
+    #surprise-message {
+      margin-top: 20px;
+      font-size: 1.5em;
+      color: #d6336c;
+      min-height: 40px;
+    }
+
+    footer {
+      margin: 40px 0;
+      font-size: 1em;
+      color: #555;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Happy Valentine’s Day, My Love ❤️</h1>
+    <p>You make my world brighter every day.</p>
+  </header>
+
+  <section class="gallery">
+    <img src="photo1.jpg" alt="Memory 1">
+    <img src="photo4.jpg" alt="Memory 2">
+    <img src="photo3.jpg" alt="Memory 3">
+  </section>
+
+  <section class="timeline">
+    <h2>Our Love Story</h2>
+    <p>💞 First Date – January 2018</p>
+    <p>💍 Engagement – June 2020</p>
+    <p>💒 Wedding – December 2021</p>
+    <p>🌍 Adventures Together – Always</p>
+  </section>
+
+  <section class="love-letter">
+    <h2>My Love Letter to You</h2>
+    <p>
+      From the moment I met you, I knew my life would never be the same.  
+      You are my best friend, my partner, and my forever Valentine.  
+      I love you more each day ❤️
+    </p>
+  </section>
+
+  <section>
+    <button class="surprise-btn" onclick="showSurprise()">Click for a Surprise 💝</button>
+    <div id="surprise-message"></div>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ just for you</p>
+  </footer>
+
+  <script>
+    const messages = [
+      "Forever Yours, Always & Forever 💖",
+      "You are my sunshine on the darkest days ☀️",
+      "Every heartbeat whispers your name ❤️",
+      "My love for you grows stronger each day 🌹",
+      "You are my dream come true 💕",
+      "Life is beautiful because of you 🌸",
+      "Together, we are unstoppable 💞"
+    ];
+
+    function showSurprise() {
+      const randomIndex = Math.floor(Math.random() * messages.length);
+      document.getElementById("surprise-message").textContent = messages[randomIndex];
+    }
+  </script>
+
+</body>
+</html>
